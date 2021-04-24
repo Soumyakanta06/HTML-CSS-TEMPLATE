@@ -1,0 +1,90 @@
+body{
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+   /* background: url(https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80); */
+   background: url(blog.jfif);
+   background-repeat: no-repeat;
+   background-size: cover;
+   /* overflow: hidden; */
+}
+
+.front{
+    background: url(https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
+    filter: blur(3px);
+  -webkit-filter: blur(3px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+}
+.blognav{
+    position: absolute;
+    margin:auto;
+    /* bottom: 300px;
+    left: 20px; */
+    color:black;
+    background: none;
+}
+.blogrow{
+    display: grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    margin: 20px 10px;
+    flex-wrap: wrap;
+}
+.card{
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "stats";
+    margin: 30px 50px;
+
+    font-family: roboto;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    transition: 0.5s;
+}
+.card-image{
+    grid-area: image;
+    background: url(masonry.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-text{
+    grid-area: text;
+    margin: 25px;
+}
+.card-text .date{
+color: rgb(255,7,110);
+font-size: 13px;
+}
+.card-text p{
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+.card-text h2{
+    margin-top: 0px;
+    font-size: 28px;
+}
+.card-stats{
+    grid-area:stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(239, 243, 12, 0.89);
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
