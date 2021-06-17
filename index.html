@@ -1,121 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blogs</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-<head>
-  <meta charset="utf-8">
-  <meta name='viewport' content='width=device-width,initial scale=1'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css"
-    integrity="sha512-RVmrWua3k1yTDEOg4Yzs2bK5+Thh7nM6jrhDq/6/5/Mwa0JbYe4pP4YMK5sqghKz01T3DgrwYc57Jaf1PSurCg=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="style1.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-  <style>
-      /* .fp-controlArrow.fp-next{
-
-      }
-      .fp-controlArrow{
-        bo
-      } */
-    body {
-      margin-top: 0px;
-      padding: 0;
-    }
-
-    .s1{
-      /* background: url("pexels-pixabay-273230.jpg"); */
-      background:green;
-    }
-    .s2{
-      /* background: url("pexels-pixabay-273230.jpg"); */
-      background:rgb(44, 46, 44) !important;;
-    }
-    .s3{
-      /* background: url("pexels-pixabay-273230.jpg"); */
-      background: purple;
-    }
-
-  </style>
-</head>
-
-<body>
-  <header>
-    <div class="spec">
-        <img src="https://www.spectrumcet.com/assets/mozclub%20logo.png" alt="">
-        <a href="#" class="logo">Spectrum</a>
-    </div>
-    <div class="toggle"></div>
-    <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Register</a></li>
-    </ul>
-</header>
-  <div id="fullpage">
-    <div class="section s1 text-center">
-      <section class="banner">
-        <div class="textBx">
-            <h2><span class="spectrum">SPECTRUM</span></h2>
-            <h3>INTERNSHIP DRIVE</h3>
-            <p class="p1">Lorem Ipsum is simply dummy text of the printing<br> and typesetting industry. Lorem Ipsum has been the
-                industry's<br> standard dummy text ever since the 1500s</p>
-            <p class="p2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the
-                industry's<br> standard dummy text ever since the 1500s</p>
-            <div class="buttons">
-                <a href="#" class="btn" id="btn1">VIEW BROCHURE</a>
-                <a href="#" class="btn" id="btn2">EXPLORE</a>
-            </div>
-        </div>
-    </section>
-    </div>
-    <div class="section s2">
-       
-        <div id="main" class="slide">
-          <img src="./flower.png" alt="" class="hero-img" />
-            
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <div class="front">
+             <!-- <div class="blognav">  -->
                 
-          <div class="hero-content">
-            <h2 class="learn"> LEARN & GROW</h2><br><br>
-            
-              <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet aliquid sint ducimus, eum obcaecati voluptatem architecto magni quia ullam expedita temporibus debitis voluptates sed delectus accusantium, vitae libero veniam consequatur.</p>
-            
-              <div class="buttonsa">
-                <a href="#" class="btn login" id="btn2">Join</a>
-                <a href="#" class="btn Register" id="btn1">Already Registered</a>
-            </div>
-          </div>
+                <!-- <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                    </ol> 
+                  </nav>
+            </div>-->
+            <div class="blogtitle">Blogs...</div>
         </div>
-        <div id="login" class="slide"><h1>second.2</h1>
-          
-        </div>
-        <div id="register" class="slide"><h1>second.3</h1>
-          
-        </div>
-        
-      
-    </div>
-    <div class="section s3">
-      <h1>Third slide</h1>
-    </div>
-    
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"
-    integrity="sha512-HqbDsHIJoZ36Csd7NMupWFxC7e7aX2qm213sX+hirN+yEx/eUNlZrTWPs1dUQDEW4fMVkerv1PfMohR1WdFFJQ=="
-    crossorigin="anonymous"></script>
-    <script>
-      new fullpage('#fullpage', {
-        autoScrolling: true,
-        responsiveWidth: 0,
-        autoScrolling:true,
-                navigation:true,
-                navigationTooltips:['Home','About','Contact'],
-                showActiveTooltip:true,
-                controlArrows:false,
-                slidesNavigation:true,
-                slidesNavPosition:'top',
-      })
-    </script>
-</body>
+    </header>
+    <div class="blogrow">
+       <div class="card">
+           <div class="card-image"><img src="https://media.self.com/photos/57d8954324fe9dae32831913/master/pass/15-Classic-Dishes_Feature.png" alt=""></div>
+           <div class="card-text">
+               <span class="date"><i class="fa fa-calendar"></i>&nbsp;21 January 2021</span>
+               <h2>Post One</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fuga eaque nesciunt atque at natus. dus!</p>
+           </div>
+           <div class="card-stats">
+               <div class="stat">
+                <div class="value"><i class="fa far fa-heart"></i></div>
+               </div>
+               <div class="stat">
+                <div class="value"><i class="fa fas fa-share-alt"></i></div>
+               </div>
+               <div class="stat">
+                <div class="value"><i class="fa far fa-comment"></i></div>
+               </div>
 
+           </div>
+       </div>
+       <div class="card">
+        <div class="card-image"><img src="https://a.cdn-hotels.com/gdcs/production149/d1480/b0946f24-cd9a-4ba7-ac7c-bef8fdb51a7a.jpg" alt=""></div>
+        <div class="card-text">
+            <span class="date"><i class="fa fa-calendar"></i>&nbsp;28 March 2021</span>
+            <h2>Post One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fuga eaque nesciunt atque at natus. dus!</p>
+        </div>
+        <div class="card-stats">
+            <div class="stat">
+             <div class="value"><i class="fa far fa-heart"></i> </div>
+            </div>
+            <div class="stat">
+             <div class="value"><i class="fa fas fa-share-alt"></i> </div>
+            </div>
+            <div class="stat">
+             <div class="value"><i class="fa fal fa-comment"></i></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-image"><img src="https://as1.ftcdn.net/jpg/01/39/61/64/500_F_139616438_zScLOyzDEuUStZMtJ8jOEHpJoPZUwR8l.jpg" alt=""></div>
+        <div class="card-text">
+            <span class="date"><i class="fa fa-calendar"></i>&nbsp;15 April 2021</span>
+            <h2>Post One</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fuga eaque nesciunt atque at natus. dus!</p>
+        </div>
+        <div class="card-stats">
+            <div class="stat">
+                <div class="value"><i class="fa far fa-heart"></i> </div>
+               </div>
+               <div class="stat">
+                <div class="value"><i class="fa fas fa-share-alt"></i> </div>
+               </div>
+               <div class="stat">
+                <div class="value"><i class="fa fal fa-comment"></i></div>
+               </div>
+
+        </div>
+    </div>
+    <!-- </div> -->
+    <!-- <div class="blogrow"> -->
+        <div class="card">
+            <div class="card-image"><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201708/dish-story_647_081417052301.jpg" alt=""></div>
+            <div class="card-text">
+                <span class="date"><i class="fa fa-calendar"></i>&nbsp;18 April 2021</span>
+                <h2>Post One</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fuga eaque nesciunt atque at natus. dus!</p>
+            </div>
+            <div class="card-stats">
+                <div class="stat">
+                    <div class="value"><i class="fa far fa-heart"></i> </div>
+                   </div>
+                   <div class="stat">
+                    <div class="value"><i class="fa fas fa-share-alt"></i> </div>
+                   </div>
+                   <div class="stat">
+                    <div class="value"><i class="fa fal fa-comment"></i></div>
+                   </div>
+ 
+            </div>
+        </div>
+        <div class="card">
+         <div class="card-image"><img src="https://www.thedailymeal.com/sites/default/files/2020/05/28/iconic_dishes_hero.jpg" alt=""></div>
+         <div class="card-text">
+             <span class="date"><i class="fa fa-calendar"></i>&nbsp;12 March 2021</span>
+             <h2>Post One</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fuga eaque nesciunt atque at natus. dus!</p>
+         </div>
+         <div class="card-stats">
+            <div class="stat">
+                <div class="value"><i class="fa far fa-heart"></i> </div>
+               </div>
+               <div class="stat">
+                <div class="value"><i class="fa fas fa-share-alt"></i> </div>
+               </div>
+               <div class="stat">
+                <div class="value"><i class="fa fal fa-comment"></i></div>
+               </div>
+ 
+         </div>
+     </div>
+     <div class="card">
+         <div class="card-image"><img src="https://www.deccanherald.com/sites/dh/files/article_images/2019/12/15/BIRYANI-1576399027.jpg" alt=""></div>
+         <div class="card-text">
+             <span class="date">2 May 2021</span>
+             <h2>Post One</h2>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fuga eaque nesciunt atque at natus. dus!</p>
+         </div>
+         <div class="card-stats">
+            <div class="stat">
+                <div class="value"><i class="fa far fa-heart"></i> </div>
+               </div>
+               <div class="stat">
+                <div class="value"><i class="fa fas fa-share-alt"></i> </div>
+               </div>
+               <div class="stat">
+                <div class="value"><i class="fa fal fa-comment"></i></div>
+               </div>
+ 
+         </div>
+     </div>
+     </div>
+         
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
 </html>
